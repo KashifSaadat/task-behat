@@ -2,12 +2,11 @@
 
 namespace Task\Plugin\Behat;
 
+use KashifSaadat\DirectoryManager\DirectoryManager;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Input\ArgvInput;
-use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Task\Plugin\Console\Output\ProxyOutput;
-use Task\Plugin\Stream\WritableInterface;
 
 class Command
 {
@@ -117,7 +116,7 @@ class Command
         return $this->add('--out', $outputDir);
     }
 
-    public function initSuites()
+    public function init()
     {
         return $this->add('--init');
     }
@@ -152,22 +151,22 @@ class Command
         return $this->add('--no-snippets');
     }
 
-    public function setStrict()
+    public function strict()
     {
         return $this->add('--strict');
     }
 
-    public function setRerun()
+    public function rerun()
     {
         return $this->add('--rerun');
     }
 
-    public function setStopOnFailure()
+    public function stopOnFailure()
     {
         return $this->add('--stop-on-failure');
     }
 
-    public function setDryRun()
+    public function dryRun()
     {
         return $this->add('--dry-run');
     }
@@ -182,17 +181,17 @@ class Command
         return $this->add('--config', $config);
     }
 
-    public function setVerbose()
+    public function verbose()
     {
         return $this->add('-v');
     }
 
-    public function setColors()
+    public function colors()
     {
         return $this->add('--colors');
     }
 
-    public function setNoColors()
+    public function noColors()
     {
         return $this->add('--no-colors');
     }

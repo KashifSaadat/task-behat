@@ -3,8 +3,6 @@
 namespace spec\Task\Plugin;
 
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
-use Symfony\Component\Console\Input\InputDefinition;
 
 class BehatPluginSpec extends ObjectBehavior
 {

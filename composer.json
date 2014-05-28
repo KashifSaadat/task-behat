@@ -14,16 +14,22 @@
     ],
     "require": {
         "task/plugin": "~1.0",
-        "behat/behat": "~3.0"
+        "behat/behat": "~3.0",
+        "kashifsaadat/cd": "~0.1"
     },
     "require-dev": {
         "task/task": "~0.1",
         "task/phpspec": "~0.1",
-        "henrikbjorn/phpspec-code-coverage" : "1.0.*@dev"
+        "henrikbjorn/phpspec-code-coverage" : "dev-feature/multiple-reports@dev"
     },
     "autoload": {
         "psr-4": {
             "Task\\Plugin\\": "src/"
         }
-    }
+    },
+    "repositories": [
+        {"type": "vcs", "url": "git@github.com:kashifsaadat/cd"},
+        {"type": "vcs", "url": "https://github.com/mbfisher/PhpSpecCodeCoverageExtension"}
+
+    ]
 }
