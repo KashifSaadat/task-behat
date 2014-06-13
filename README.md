@@ -1,7 +1,7 @@
 task/behat
 ============
 
-https://www.codeship.io/projects/7e628e90-d52e-0131-832b-520dd48743bb/status
+[![Codeship Status](https://www.codeship.io/projects/7e628e90-d52e-0131-832b-520dd48743bb/status)](https://www.codeship.io/projects/23688)
 
 Example
 =======
